@@ -54,32 +54,52 @@ CMAKE_BINARY_DIR = /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/ou
 
 # The main recursive "all" target.
 all: CMakeFiles/cmake_2.dir/all
+all: functions/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: functions/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cmake_2.dir/clean
+clean: functions/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory functions
+
+# Recursive "all" directory target.
+functions/all: functions/CMakeFiles/functions.dir/all
+
+.PHONY : functions/all
+
+# Recursive "preinstall" directory target.
+functions/preinstall:
+
+.PHONY : functions/preinstall
+
+# Recursive "clean" directory target.
+functions/clean: functions/CMakeFiles/functions.dir/clean
+
+.PHONY : functions/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cmake_2.dir
 
 # All Build rule for target.
-CMakeFiles/cmake_2.dir/all:
+CMakeFiles/cmake_2.dir/all: functions/CMakeFiles/functions.dir/all
 	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/depend
 	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles --progress-num=1,2,3 "Built target cmake_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles --progress-num=1,2 "Built target cmake_2"
 .PHONY : CMakeFiles/cmake_2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cmake_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cmake_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles 0
 .PHONY : CMakeFiles/cmake_2.dir/rule
@@ -93,6 +113,33 @@ cmake_2: CMakeFiles/cmake_2.dir/rule
 CMakeFiles/cmake_2.dir/clean:
 	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/clean
 .PHONY : CMakeFiles/cmake_2.dir/clean
+
+#=============================================================================
+# Target rules for target functions/CMakeFiles/functions.dir
+
+# All Build rule for target.
+functions/CMakeFiles/functions.dir/all:
+	$(MAKE) -f functions/CMakeFiles/functions.dir/build.make functions/CMakeFiles/functions.dir/depend
+	$(MAKE) -f functions/CMakeFiles/functions.dir/build.make functions/CMakeFiles/functions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles --progress-num=3,4 "Built target functions"
+.PHONY : functions/CMakeFiles/functions.dir/all
+
+# Build rule for subdir invocation for target.
+functions/CMakeFiles/functions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 functions/CMakeFiles/functions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles 0
+.PHONY : functions/CMakeFiles/functions.dir/rule
+
+# Convenience name for target.
+functions: functions/CMakeFiles/functions.dir/rule
+
+.PHONY : functions
+
+# clean rule for target.
+functions/CMakeFiles/functions.dir/clean:
+	$(MAKE) -f functions/CMakeFiles/functions.dir/build.make functions/CMakeFiles/functions.dir/clean
+.PHONY : functions/CMakeFiles/functions.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

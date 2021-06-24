@@ -4,18 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/main.cpp" "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles/cmake_2.dir/main.cpp.o"
+  "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions/functions.cpp" "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/functions/CMakeFiles/functions.dir/functions.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../../functions"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/functions/CMakeFiles/functions.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

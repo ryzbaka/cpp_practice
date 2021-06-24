@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions.cpp
-functions.h
-/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions.h
-
-/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions.h
+../../functions/functions.h
 
 /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/main.cpp
 iostream

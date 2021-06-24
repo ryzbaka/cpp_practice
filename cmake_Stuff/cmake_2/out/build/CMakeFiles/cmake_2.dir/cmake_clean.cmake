@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cmake_2.dir/functions.cpp.o"
   "CMakeFiles/cmake_2.dir/main.cpp.o"
   "cmake_2"
   "cmake_2.pdb"

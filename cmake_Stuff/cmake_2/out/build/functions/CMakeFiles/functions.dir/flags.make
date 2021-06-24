@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions 
+CXX_INCLUDES = 
 

@@ -123,32 +123,18 @@ cmake_2/fast:
 	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/build
 .PHONY : cmake_2/fast
 
-functions.o: functions.cpp.o
+#=============================================================================
+# Target rules for targets named functions
 
-.PHONY : functions.o
+# Build rule for target.
+functions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 functions
+.PHONY : functions
 
-# target to build an object file
-functions.cpp.o:
-	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/functions.cpp.o
-.PHONY : functions.cpp.o
-
-functions.i: functions.cpp.i
-
-.PHONY : functions.i
-
-# target to preprocess a source file
-functions.cpp.i:
-	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/functions.cpp.i
-.PHONY : functions.cpp.i
-
-functions.s: functions.cpp.s
-
-.PHONY : functions.s
-
-# target to generate assembly for a file
-functions.cpp.s:
-	$(MAKE) -f CMakeFiles/cmake_2.dir/build.make CMakeFiles/cmake_2.dir/functions.cpp.s
-.PHONY : functions.cpp.s
+# fast build rule for target.
+functions/fast:
+	$(MAKE) -f functions/CMakeFiles/functions.dir/build.make functions/CMakeFiles/functions.dir/build
+.PHONY : functions/fast
 
 main.o: main.cpp.o
 
@@ -186,9 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cmake_2"
-	@echo "... functions.o"
-	@echo "... functions.i"
-	@echo "... functions.s"
+	@echo "... functions"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

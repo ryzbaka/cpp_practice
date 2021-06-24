@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/cmake_2.dir/main.cpp.o CMakeFiles/cmake_2.dir/functions.cpp.o  -o cmake_2 
+/usr/bin/c++     CMakeFiles/cmake_2.dir/main.cpp.o  -o cmake_2   -L/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions  -Wl,-rpath,/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/functions functions/libfunctions.a 

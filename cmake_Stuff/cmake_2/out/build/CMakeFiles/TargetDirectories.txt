@@ -1,3 +1,6 @@
 /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/CMakeFiles/cmake_2.dir
+/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/functions/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/functions/CMakeFiles/edit_cache.dir
+/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/out/build/functions/CMakeFiles/functions.dir
