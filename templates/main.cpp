@@ -16,6 +16,27 @@
 using std::cout;
 using std::string;
 
+template <class T>
+class Accum
+{ //template class
+private:
+    T total;
+
+public:
+    Accum(T start) : total(start){};
+    T operator+=(T const &t)
+    {
+        return total = total + t;
+    }
+    T operator+=(Accum const &a)
+    {
+        return total += a.getTotal();
+    }
+    T getTotal() const
+    {
+        return total;
+    }
+};
 class Person
 {
 private:
@@ -53,5 +74,14 @@ int main()
     Person p2 = Person("Haider", 18);
     Person p3 = maximus(p1, p2);
     cout << p3.getName() << "\n";
+    //Template Class demo
+    Accum<int> a1 = Accum<int>(0);
+    a1 += 1;
+    a1 += 23;
+    int result = a1.getTotal();
+    cout << result << "\n";
+    Accum<int> a2 = Accum<int>(24);
+    a1 += a2;
+    cout << a1.getTotal() << "\n";
     return 0;
 }
