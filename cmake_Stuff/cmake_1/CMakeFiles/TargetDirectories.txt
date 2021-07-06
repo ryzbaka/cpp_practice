@@ -1,0 +1,3 @@
+C:/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_1/CMakeFiles/cmake_1.dir
+C:/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_1/CMakeFiles/ALL_BUILD.dir
+C:/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_1/CMakeFiles/ZERO_CHECK.dir

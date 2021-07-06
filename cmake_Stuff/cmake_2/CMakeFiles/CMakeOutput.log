@@ -1,0 +1,59 @@
+The system is: Linux - 5.4.72-microsoft-standard-WSL2 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/3.18.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/3.18.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_34e74/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_34e74.dir/build.make CMakeFiles/cmTC_34e74.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp'
+gmake[1]: Warning: File 'CMakeFiles/cmTC_34e74.dir/progress.make' has modification time 0.059 s in the future
+Building C object CMakeFiles/cmTC_34e74.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_34e74.dir/testCCompiler.c.o -c /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_34e74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34e74.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_34e74.dir/testCCompiler.c.o -o cmTC_34e74 
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Leaving directory '/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_02952/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_02952.dir/build.make CMakeFiles/cmTC_02952.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp'
+gmake[1]: Warning: File 'CMakeFiles/cmTC_02952.dir/progress.make' has modification time 0.05 s in the future
+Building CXX object CMakeFiles/cmTC_02952.dir/testCXXCompiler.cxx.o
+/usr/bin/c++    -o CMakeFiles/cmTC_02952.dir/testCXXCompiler.cxx.o -c /mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_02952
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02952.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_02952.dir/testCXXCompiler.cxx.o -o cmTC_02952 
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Leaving directory '/mnt/c/Users/THIP/Desktop/cpp_practice/cmake_Stuff/cmake_2/CMakeFiles/CMakeTmp'
+
+
+

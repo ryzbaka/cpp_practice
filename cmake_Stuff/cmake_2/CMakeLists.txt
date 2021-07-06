@@ -9,7 +9,7 @@ add_executable(${PROJECT_NAME} main.cpp) # tell cmake to build an excutable
 # running `make` in the folder that contains Makefile will build the project
 # this should spit out "Build target ${PROJECT_NAME}"
 target_include_directories(${PROJECT_NAME} PRIVATE functions)
-target_link_directories(${PROJECT_NAME} PRIVATE functions/)
+target_link_directories(${PROJECT_NAME} PRIVATE functions) #maybe add / after functions
 add_subdirectory(functions) # add library folder and build
 target_link_libraries(${PROJECT_NAME} functions) #link library to project
 
