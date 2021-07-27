@@ -19,7 +19,8 @@
    We use destructors to free up space. We use copy constructors to prevent the
    calling of delete on a pointer that has already been deleted by creating a
    fresh copy. We use copy assignment operators to prevent memory leakage by
-   loss of access to old pointer value before it could be deleted.
+   loss of access(because of overwrite) to old pointer value before it could be
+   deleted.
 */
 
 #include <iostream>
