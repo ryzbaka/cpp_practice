@@ -72,6 +72,9 @@ public:
     pResource = new Resource("Resource for: " + this->getName());
   }
   Person &operator=(Person const &anotherPerson) { // copy assignment operator
+    if (this == &anotherPerson) {
+      return *this;
+    }
     delete pResource;
     pResource = new Resource(anotherPerson.pResource->getName());
     return *this;
@@ -87,5 +90,7 @@ int main() {
   Person p3("Hamza", "Ali", 21);
   p3.addResource();
   p3 = p2;
+  p3 = p3; // this would cause error if there was no check if other value is
+           // same as current value in copy assignment operator.
   return 0;
 }
