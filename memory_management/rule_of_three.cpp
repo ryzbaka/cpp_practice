@@ -91,6 +91,7 @@ int main() {
   p3.addResource();
   p3 = p2;
   p3 = p3; // this would cause error if there was no check if other value is
-           // same as current value in copy assignment operator.
+           // same as current value in copy assignment operator because we would
+           // be trying to use a deleted pResource.
   return 0;
 }
