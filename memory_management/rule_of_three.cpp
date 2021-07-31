@@ -28,19 +28,22 @@
 using std::cout;
 using std::string;
 
-class Resource {
+class Resource
+{
 private:
   std::string name;
 
 public:
-  Resource(std::string n) : name(n) {
+  Resource(std::string n) : name(n)
+  {
     cout << "Constructing resource: " << n << "\n";
   };
   ~Resource() { std::cout << "Destroyed: " << this->name << "\n"; };
   std::string getName() const { return name; };
 };
 
-class Person {
+class Person
+{
 private:
   string firstName;
   string lastName;
@@ -53,7 +56,8 @@ public:
 
   Person(Person const &anotherPerson) // copy constructor
       : firstName(anotherPerson.getFirst()), lastName(anotherPerson.getLast()),
-        age(anotherPerson.getAge()) {
+        age(anotherPerson.getAge())
+  {
     pResource = new Resource(anotherPerson.pResource->getName());
   }
 
@@ -62,26 +66,33 @@ public:
   int getAge() const { return age; }
   string getFirst() const { return firstName; }
   string getLast() const { return lastName; }
-  void setFirstName(string first) {
+  void setFirstName(string first)
+  {
     cout << "changed first name to:\t" << first << "\n";
     firstName = first;
   }
-  void addResource() {
+  void addResource()
+  {
     delete pResource; // free up memory at address that pResource is pointing
                       // to. delete trigger the destructor.
     pResource = new Resource("Resource for: " + this->getName());
   }
-  Person &operator=(Person const &anotherPerson) { // copy assignment operator
-    if (this == &anotherPerson) {
+  Person &operator=(Person const &anotherPerson)
+  { // copy assignment operator
+    if (this == &anotherPerson)
+    {
       return *this;
     }
     delete pResource;
     pResource = new Resource(anotherPerson.pResource->getName());
+    firstName = anotherPerson.getFirst();
+    lastName = anotherPerson.getLast();
     return *this;
   }
 };
 
-int main() {
+int main()
+{
   Person p1("Ethan", "Klein", 36);
   p1.addResource();
   p1.setFirstName("Hila");
@@ -89,9 +100,9 @@ int main() {
   Person p2 = p1; // copy constructor;
   Person p3("Hamza", "Ali", 21);
   p3.addResource();
-  p3 = p2;
+  p3 = p2; //copy assignment operator
   p3 = p3; // this would cause error if there was no check if other value is
-           // same as current value in copy assignment operator because we would
-           // be trying to use a deleted pResource.
+  // same as current value in copy assignment operator because we would
+  // be trying to use a deleted pResource.
   return 0;
 }
